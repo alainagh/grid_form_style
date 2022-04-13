@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <title>Sign Up</title>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="main-menu">
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60" width="60px" height="60px">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="#">Form</a></li>
+        <li><a href="#">Reserve</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section>
+    <div class="title">
+      <h1> Let's get you out there.</h1>
+    </div>
+
+    <form>
+      <div class="instruction">
+        <h2>First, your personal details. </h2>
+      </div>
+
+      <fieldset>
+        <div class="personal-details">
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+      </fieldset>
+
+
+      <div class="instruction">
+        <h2>Next, tell us your plan.</h2>
+      </div>
+
+      <div class="plan">
+        <fieldset class="maingoals">
+          <legend>What are your main goals?</legend>
+          <input type="checkbox" id="camping" name="plan" value="camping">
+          <label for="camping">Rent a Campsite</label>
+
+          <input type="checkbox" id="fishing" name="plan" value="fishing">
+          <label for="fishing">Book a Fishing Guide</label>
+
+          <input type="checkbox" id="wildlife" name="plan" value="wildlife">
+          <label for="wildlife">Explore Wildlife Tours</label>
+
+          <input type="checkbox" id="gear" name="plan" value="gear">
+          <label for="gear">Rent Gear</label>
+
+          <input type="checkbox" id="maps" name="plan" value="maps">
+          <label for="maps">View Our Maps</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>When will your trip begin?</legend>
+          <input type="date" name="date" id="date">
+        </fieldset>
+
+        <fieldset>
+          <legend>When will your trip end?</legend>
+          <input type="date" name="date" id="date">
+        </fieldset>
+
+        <fieldset>
+          <legend>What is your budget? (Enter dollar amount.)</legend>
+          <input id="number" type="number">
+        </fieldset>
+      </div>
+
+      <div class="instruction">
+        <h2>Almost done...</h2>
+      </div>
+
+      <div class="extras">
+        <fieldset class="groupsize">
+          <legend>How many people does your group consist of?</legend>
+          <input type="radio" name="taste" id="1-4" value="1-4">
+          <label for="1-4">1-4</label>
+
+          <input type="radio" name="taste" id="5-10" value="5-10">
+          <label for="5-10">5-10</label>
+
+          <input type="radio" name="taste" id="11-20" value="11-20">
+          <label for="11-20">11-20</label>
+          <input type="radio" name="taste" id="21+" value="21+">
+          <label for="21+">21+</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Please make us aware of any special needs in your group that need to be met.</legend>
+          <input type="text" id="needs" name="needs">
+        </fieldset>
+      </div>
+    </form>
+  </section>
+  <a class="aboutbutton">Submit Here</a>
+</body>
+
+</html>
